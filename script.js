@@ -29,3 +29,40 @@ tripleAdd1(10, 20, 30);
 (function doubleNumber(num) {
   return num * 2;
 })(10);
+
+
+////////////////////////////////////
+// Button 5
+
+
+// ES5 with IIFE
+/*
+function createButtons() {
+  for (var i = 1; i <= 5; i++) {
+    var body = document.getElementsByTagName("BODY")[0];
+    var button = document.createElement("BUTTON");
+    button.innerHTML = 'Button ' + i;
+    (function(num) {
+      button.onclick = function() {
+        alert('This is button ' + num);
+      };
+    })(i);
+    body.appendChild(button);
+  }
+}
+*/
+
+// ES6 
+function createButtons() {
+  for (let i = 1; i <= 5; i++) {
+    var body = document.getElementsByTagName("BODY")[0];
+    var button = document.createElement("BUTTON");
+    button.innerHTML = 'Button ' + i;
+    button.onclick = function() {
+      alert('This is button ' + i);
+    };
+    body.appendChild(button);
+  }
+}
+
+createButtons();
