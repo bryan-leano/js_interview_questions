@@ -106,6 +106,7 @@ outterFunc('param one');
 
 // "This" is used to describe the object that is in the conntext of
 
+/*
 var house = {
   price: 100000,
   squareFeet: 2000,
@@ -117,3 +118,63 @@ var house = {
 
 console.log(house.price);
 console.log(house.getPricePerSquareFoot());
+*/
+
+
+////////////////////////////////////
+// Hoisting
+
+// Variable and Function Hoisting is when the varaibles and functions are declared at the top of the file
+
+console.log(color);
+
+var color = 'blue';
+
+console.log(color);
+
+
+
+var getProduct = function(num1, num2) {
+  return num1 * num2;
+};
+
+console.log(getProduct(2, 3));
+
+// Function declaration get hoisted to the top of the file
+console.log(getProduct2(2, 3));
+
+function getProduct2(num1, num2){
+  return num1 * num2;
+}
+
+// Functions in another function get hoisted to the top of the outer function
+var globalVar = 'global';
+ 
+(function() {
+  
+  var name = 'Jen';
+  
+  var getAge = function() {
+    return '30';
+  };
+  
+  function getState() {
+    return 'Delaware'; 
+  }
+  
+})();
+
+function getTotal() {
+  let total = 0;
+
+  for(var i = 0; i < 10; i++) {
+
+    let valueToAdd = i;
+    var multiplier = 2;
+    total += valueToAdd * multiplier;
+  }
+
+  return total;
+}
+
+getTotal();
