@@ -78,6 +78,7 @@ createButtons();
 // 2. Variables in the scope of the outer function
 // 3. Variables in the global scope
 
+/*
 const globalVariable = 'global var';
 
 function outterFunc(param1) {
@@ -97,3 +98,22 @@ function outterFunc(param1) {
 }
 
 outterFunc('param one');
+*/
+
+
+////////////////////////////////////
+// "this" keyword
+
+// "This" is used to describe the object that is in the conntext of
+
+var house = {
+  price: 100000,
+  squareFeet: 2000,
+  owner: 'Taylor',
+  getPricePerSquareFoot: function() {
+    return this.price / this.squareFeet;
+  }
+};
+
+console.log(house.price);
+console.log(house.getPricePerSquareFoot());
