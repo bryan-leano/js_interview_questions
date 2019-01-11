@@ -213,3 +213,16 @@ myCar.logColor();
 
 console.log(7 == '7');
 console.log(7 === '7');
+
+
+////////////////////////////////////
+// Log Number Function
+
+var num = 50;
+
+function logNumber() {
+  console.log(num);
+  var num = 100;
+}
+
+logNumber();
