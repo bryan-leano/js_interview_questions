@@ -187,6 +187,7 @@ getTotal();
 
 // self is used to store a reference to a certain scope or context that is to be used later on.
 
+/*
 var myCar = {
   color: "Blue",
   logColor: function() {
@@ -201,3 +202,14 @@ var myCar = {
 };
 
 myCar.logColor();
+*/
+
+
+////////////////////////////////////
+// Equals and Strict Equals
+
+// == checks to see if it's abstract equality
+// === checks to see if two values are completely equal to each other, strict equality
+
+console.log(7 == '7');
+console.log(7 === '7');
