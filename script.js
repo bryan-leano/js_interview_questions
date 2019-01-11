@@ -126,6 +126,7 @@ console.log(house.getPricePerSquareFoot());
 
 // Variable and Function Hoisting is when the varaibles and functions are declared at the top of the file
 
+/*
 console.log(color);
 
 var color = 'blue';
@@ -178,3 +179,25 @@ function getTotal() {
 }
 
 getTotal();
+*/
+
+
+////////////////////////////////////
+// Scope and "self"
+
+// self is used to store a reference to a certain scope or context that is to be used later on.
+
+var myCar = {
+  color: "Blue",
+  logColor: function() {
+      var self = this;
+      console.log("In logColor - this.color: " + this.color);
+      console.log("In logColor - self.color: " + self.color);
+      (function() {
+          console.log("In IIFE - this.color: " + this.color);
+          console.log("In IIFE - self.color: " + self.color);
+      })();
+  }
+};
+
+myCar.logColor();
