@@ -211,6 +211,7 @@ myCar.logColor();
 // == checks to see if it's abstract equality
 // === checks to see if two values are completely equal to each other, strict equality
 
+/*
 console.log(7 == '7');
 console.log(7 === '7');
 
@@ -226,3 +227,33 @@ function logNumber() {
 }
 
 logNumber();
+*/
+
+
+////////////////////////////////////
+// Use strict
+
+// The main purpose of 'use strict' is to enforce stricter parsing and error handling in your code.
+
+// Prevents the use of global variables
+
+// example 1
+ 
+'use strict';
+ 
+city = 'London';
+console.log(city)
+ 
+// example 2
+ 
+'use strict';
+function myFunc(a, a, b) {
+    console.log(a, a, b);
+}
+ 
+myFunc(1, 2, 3);
+ 
+// example 3
+ 
+'use strict';
+delete Object.prototype;
