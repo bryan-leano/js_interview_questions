@@ -2,6 +2,8 @@
 // Triple Add
 
 // Currying function
+
+/*
 function tripleAdd(num1) {
   return function(num2) {
     return function(num3) {
@@ -29,7 +31,7 @@ tripleAdd1(10, 20, 30);
 (function doubleNumber(num) {
   return num * 2;
 })(10);
-
+*/
 
 ////////////////////////////////////
 // Button 5
@@ -53,6 +55,7 @@ function createButtons() {
 */
 
 // ES6 
+/*
 function createButtons() {
   for (let i = 1; i <= 5; i++) {
     var body = document.getElementsByTagName("BODY")[0];
@@ -66,7 +69,7 @@ function createButtons() {
 }
 
 createButtons();
-
+*/
 
 ////////////////////////////////////
 // Closures
@@ -264,6 +267,7 @@ delete Object.prototype;
 ////////////////////////////////////
 // Curry function question
 
+/*
 function getProduct(num1, num2) {
   return num1 * num2;
 }
@@ -279,3 +283,29 @@ function getProductOne(num1) {
 }
 
 getProductOne(10)(20);
+*/
+
+
+////////////////////////////////////
+// Counter Function
+
+function myFunc() {
+  let count = 0;
+  
+  return function() {
+    count++;
+    return count;
+  };
+}
+ 
+console.log(myFunc());
+ 
+const instanceOne = myFunc();
+const instanceTwo = myFunc();
+ 
+console.log('instanceOne: ', instanceOne());
+console.log('instanceOne: ', instanceOne());
+console.log('instanceOne: ', instanceOne());
+console.log('instanceTwo: ', instanceTwo());
+console.log('instanceTwo: ', instanceTwo());
+console.log('instanceOne: ', instanceOne());
