@@ -289,6 +289,7 @@ getProductOne(10)(20);
 ////////////////////////////////////
 // Counter Function
 
+/*
 function myFunc() {
   let count = 0;
   
@@ -309,3 +310,16 @@ console.log('instanceOne: ', instanceOne());
 console.log('instanceTwo: ', instanceTwo());
 console.log('instanceTwo: ', instanceTwo());
 console.log('instanceOne: ', instanceOne());
+*/
+
+
+////////////////////////////////////
+// Logging X and Y question
+
+(function() {
+  'use strict';
+  var x = y = 200;
+})();
+
+console.log('y: ', y);
+console.log('x: ', x);
