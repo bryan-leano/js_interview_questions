@@ -330,6 +330,7 @@ console.log('x: ', x);
 ////////////////////////////////////
 // Call and Apply
 
+/*
 const car1 = {
   brand: 'Porsche',
   getCarDescription: function (cost, year, color) {
@@ -354,4 +355,20 @@ car1.getCarDescription.call(car2, 200000, 2013, 'yellow');
 // apply()
 // Similar to the call method but the arguments come in an array
 car1.getCarDescription.apply(car3, [35000, 2012, 'black']);
+*/
 
+
+////////////////////////////////////
+// list 2 question
+
+const list1 = [1, 2, 3, 4, 5];
+const list2 = list1.slice();
+list1.push(6, 7, 8);
+
+console.log(list1);
+console.log(list2);
+
+// passing by value
+const myNum = 10;
+const myString = 'hello world';
+const myString2 = myString;
