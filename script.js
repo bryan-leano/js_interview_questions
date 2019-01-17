@@ -379,9 +379,10 @@ const myString2 = myString;
 ////////////////////////////////////
 // Singly or Doubly Invoked Function
 
-//function getTotal(num1, num2) {
-//  return num1 * num2;
-//};
+/*
+function getTotal(num1, num2) {
+  return num1 * num2;
+};
 
 function getTotal(num1) {
   return function(num2) {
@@ -391,3 +392,29 @@ function getTotal(num1) {
 
 //getTotal(10, 20);
 getTotal(10)(20);
+*/
+
+
+////////////////////////////////////
+// JSON Data
+
+// TASK:
+// 1. Describe what JSON format is.
+// JSON is JavaScript Object Notation. It's a light weight format for transferring data.
+// 2. Delete the data types not permitted in JSON.
+// 3. Replace placeholder-text with the corresponding data type,
+//    properly formatted as JSON.
+ 
+const myJsonObj = {
+  "myString": "hello world",
+  "myNumber": 123.45,
+  "myNull": null,
+  "myBoolean": false,
+  // myUndefined: [undefined],
+  "myArray": [20, 30, "orange"],
+  // myFunction: [some function],
+  "myObject": {
+    "name": "Sam",
+    "age": 30
+  }
+};
