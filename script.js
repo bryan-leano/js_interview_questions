@@ -361,6 +361,7 @@ car1.getCarDescription.apply(car3, [35000, 2012, 'black']);
 ////////////////////////////////////
 // list 2 question
 
+/*
 const list1 = [1, 2, 3, 4, 5];
 const list2 = list1.slice();
 list1.push(6, 7, 8);
@@ -372,3 +373,21 @@ console.log(list2);
 const myNum = 10;
 const myString = 'hello world';
 const myString2 = myString;
+*/
+
+
+////////////////////////////////////
+// Singly or Doubly Invoked Function
+
+//function getTotal(num1, num2) {
+//  return num1 * num2;
+//};
+
+function getTotal(num1) {
+  return function(num2) {
+    return num1 * num2;
+  }
+}
+
+//getTotal(10, 20);
+getTotal(10)(20);
