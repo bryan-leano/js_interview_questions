@@ -405,6 +405,7 @@ getTotal(10)(20);
 // 3. Replace placeholder-text with the corresponding data type,
 //    properly formatted as JSON.
  
+/*
 const myJsonObj = {
   "myString": "hello world",
   "myNumber": 123.45,
@@ -418,3 +419,20 @@ const myJsonObj = {
     "age": 30
   }
 };
+*/
+
+
+////////////////////////////////////
+// Order logged out
+
+// Ouestion:
+// What order are the numbers (1, 2, 3, 4) logged out in?
+
+function logNumbers() {
+  console.log(1);
+  setTimeout(function(){console.log(2)}, 1000);
+  setTimeout(function(){console.log(3)}, 0);
+  console.log(4);
+}
+
+logNumbers();
