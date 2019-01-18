@@ -428,6 +428,7 @@ const myJsonObj = {
 // Ouestion:
 // What order are the numbers (1, 2, 3, 4) logged out in?
 
+/*
 function logNumbers() {
   console.log(1);
   setTimeout(function(){console.log(2)}, 1000);
@@ -436,3 +437,56 @@ function logNumbers() {
 }
 
 logNumbers();
+*/
+
+
+////////////////////////////////////
+// Making an object
+
+// object literal syntax
+const myBoat = {
+  length: 24,
+  maxSpeed: 45,
+  passengers: 14,
+  getLength: function() {
+    return this.length;
+  }
+
+}; 
+
+// new keyword & Object constructor
+const student = new Object();
+ 
+student.grade = 12;
+student.gradePointAverage = 3.7;
+student.classes = ["English", "Algebra", "Chemistry"];
+student.getClasses = function() {
+  return this.classes;
+};
+ 
+// constructor function
+function Car(color, brand, year) {
+  this.color = color;
+  this.brand = brand;
+  this.year = year;
+}
+
+Car.prototype.getColor = function() {
+  return this.color;
+};
+
+const carlysCar = new Car('blue', 'Ferrari', 2015);
+const jimsCar = new Car('red', 'Tesla', 2014);
+
+console.log(carlysCar.getColor());
+console.log(jimsCar.getColor());
+
+function User(firstName, lastName, age, gender) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+  this.gender = gender;
+};
+
+var user1 = new User('John', 'Smith', 26, 'male');
+var user200 = new User('Jill', 'Robinson', 26, 'female');
