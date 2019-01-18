@@ -443,6 +443,7 @@ logNumbers();
 ////////////////////////////////////
 // Making an object
 
+/*
 // object literal syntax
 const myBoat = {
   length: 24,
@@ -490,3 +491,13 @@ function User(firstName, lastName, age, gender) {
 
 var user1 = new User('John', 'Smith', 26, 'male');
 var user200 = new User('Jill', 'Robinson', 26, 'female');
+*/
+
+
+////////////////////////////////////
+// type of Data Types
+
+console.log(typeof null);  // object
+console.log(typeof undefined);  // undefined
+console.log(typeof {});  // object
+console.log(typeof []);  // object
