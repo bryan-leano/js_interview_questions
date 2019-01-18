@@ -508,6 +508,7 @@ console.log(typeof []);  // object
 ////////////////////////////////////
 // Bind Method
 
+/*
 this.distance = 10000;
 const roadTrip1 = {
   distance: 3000,
@@ -523,3 +524,27 @@ const roadTrip2 = {
 const getTripDistance = roadTrip1.getDistance.bind(roadTrip2, 'km');
  
 getTripDistance(' in total');
+*/
+
+
+////////////////////////////////////
+// Two Objects
+
+const user1 = {
+  name: 'Jordan',
+  age: 28
+};
+
+const user2 = {
+  name: 'Jordan',
+  age:28
+};
+
+console.log(user1 == user2);  // false
+console.log(user1 === user2);  // false
+
+console.log(JSON.stringify(user1) == JSON.stringify(user2));  // true
+console.log(JSON.stringify(user1) === JSON.stringify(user2));  // false
+
+// Two objects are never equal to each other. 
+// In JS, we pass objects, we pass them by reference, not by value.
