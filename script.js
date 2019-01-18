@@ -497,7 +497,29 @@ var user200 = new User('Jill', 'Robinson', 26, 'female');
 ////////////////////////////////////
 // type of Data Types
 
+/*
 console.log(typeof null);  // object
 console.log(typeof undefined);  // undefined
 console.log(typeof {});  // object
 console.log(typeof []);  // object
+*/
+
+
+////////////////////////////////////
+// Bind Method
+
+this.distance = 10000;
+const roadTrip1 = {
+  distance: 3000,
+  getDistance: function(unit, caption) {
+    return this.distance + unit + caption;
+  }
+};
+ 
+const roadTrip2 = {
+  distance: 5000
+};
+ 
+const getTripDistance = roadTrip1.getDistance.bind(roadTrip2, 'km');
+ 
+getTripDistance(' in total');
