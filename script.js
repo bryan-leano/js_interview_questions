@@ -582,6 +582,7 @@ console.log([[1], [2], [3], [4]].indexOf([2])); // -1
 ////////////////////////////////////
 // Equivalent Numbers
 
+/*
 console.log(900.9 === 3 * 300.3); // false
 
 console.log(900.9 === 300.3 * 3);
@@ -589,3 +590,27 @@ console.log(300.3 * 3);
 console.log(Number((300.3 * 3).toFixed(2)));
 console.log(Number((300.3 * 3).toPrecision(12)));
 console.log(((300.3 * 10) * 3) / 10);
+*/
+
+
+////////////////////////////////////
+// Objects and Strings Question
+
+var string1 = 'Tampa';
+var string2 = string1;
+
+string1 = 'Venice';
+
+console.log(string2);  // Tampa
+
+////////////////////////////////
+
+var person1 = {
+  name: 'Alex',
+  age: 30
+};
+
+var person2 = person1
+person2.name = 'Kyle';
+
+console.log(person1);  // object with name: 'Kyle'
