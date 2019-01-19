@@ -621,6 +621,7 @@ console.log(person1);  // object with name: 'Kyle'
 ////////////////////////////////////
 // Strings and Arrays Question
 
+/*
 const data1 = 'Jordan Smith'
 
 const data2 = [].filter.call(data1, function(elem, index) {
@@ -631,3 +632,21 @@ const data2 = [].filter.call(data1, function(elem, index) {
 // cannot use: push, pop, splice, shift, reverse, etc.
 
 console.log(data2);
+*/
+
+
+////////////////////////////////////
+// Objects Properties Question
+
+const a = {};
+const b = { name: 'b' };
+const c = { name: 'c' };
+ 
+a[b] = 200;
+// a['[object Object]'] = 200
+ 
+a[c] = 400;
+// a['[object Object]'] = 400
+ 
+console.log(a[b]);
+// console.log(a['[object Object]']);
