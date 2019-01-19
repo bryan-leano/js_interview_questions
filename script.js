@@ -571,7 +571,21 @@ console.log('arr4: ', arr4);
 ////////////////////////////////////
 // Array IndexOf
 
+/*
 console.log([10, 20, 30, 40, 50].indexOf(30)); // 2
-console.log([{ name: 'Param' }, { name: 'Kent' }].indexOf({ name: 'Kent' })); // 1
+console.log([{ name: 'Param' }, { name: 'Kent' }].indexOf({ name: 'Kent' })); // -1
 console.log('Hello World'.indexOf('o')); // 4
-console.log([[1], [2], [3], [4]].indexOf([2])); // null
+console.log([[1], [2], [3], [4]].indexOf([2])); // -1
+*/
+
+
+////////////////////////////////////
+// Equivalent Numbers
+
+console.log(900.9 === 3 * 300.3); // false
+
+console.log(900.9 === 300.3 * 3);
+console.log(300.3 * 3);
+console.log(Number((300.3 * 3).toFixed(2)));
+console.log(Number((300.3 * 3).toPrecision(12)));
+console.log(((300.3 * 10) * 3) / 10);
