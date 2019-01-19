@@ -530,6 +530,7 @@ getTripDistance(' in total');
 ////////////////////////////////////
 // Two Objects
 
+/*
 const user1 = {
   name: 'Jordan',
   age: 28
@@ -545,6 +546,32 @@ console.log(user1 === user2);  // false
 
 console.log(JSON.stringify(user1) == JSON.stringify(user2));  // true
 console.log(JSON.stringify(user1) === JSON.stringify(user2));  // false
+*/
 
 // Two objects are never equal to each other. 
 // In JS, we pass objects, we pass them by reference, not by value.
+
+
+////////////////////////////////////
+// Array Constructor
+
+/*
+var arr1 = [];
+var arr2 = new Array(50);
+var arr3 = new Array(1, 2, "three", 4, "five");
+var arr4 = new Array([1, 2, 3, 4, 5]);
+ 
+console.log('arr1: ', arr1);
+console.log('arr2: ', arr2);
+console.log('arr3: ', arr3);
+console.log('arr4: ', arr4);
+*/
+
+
+////////////////////////////////////
+// Array IndexOf
+
+console.log([10, 20, 30, 40, 50].indexOf(30)); // 2
+console.log([{ name: 'Param' }, { name: 'Kent' }].indexOf({ name: 'Kent' })); // 1
+console.log('Hello World'.indexOf('o')); // 4
+console.log([[1], [2], [3], [4]].indexOf([2])); // null
