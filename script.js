@@ -596,6 +596,7 @@ console.log(((300.3 * 10) * 3) / 10);
 ////////////////////////////////////
 // Objects and Strings Question
 
+/*
 var string1 = 'Tampa';
 var string2 = string1;
 
@@ -614,3 +615,19 @@ var person2 = person1
 person2.name = 'Kyle';
 
 console.log(person1);  // object with name: 'Kyle'
+*/
+
+
+////////////////////////////////////
+// Strings and Arrays Question
+
+const data1 = 'Jordan Smith'
+
+const data2 = [].filter.call(data1, function(elem, index) {
+  return index > 6;
+});
+
+// only use 'read-only' methods: filter, forEach, map, some, every, etc.
+// cannot use: push, pop, splice, shift, reverse, etc.
+
+console.log(data2);
