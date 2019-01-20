@@ -657,6 +657,7 @@ console.log(a[b]);
 ////////////////////////////////////
 // X and Y
 
+/*
 var x = 10;
  
 function y() {
@@ -669,3 +670,29 @@ function y() {
 y();
  
 console.log(x);
+*/
+
+
+////////////////////////////////////
+// Withdraw from Account
+
+const account1 = {
+  name: 'Jen',
+  totalAmount: 5000,
+  deductAmount: function(amount) {
+    this.totalAmount -= amount;
+    return 'Amount in the account: ' + this.totalAmount;
+  },
+};
+
+const account2 = {
+  name: 'James',
+  totalAmount: 8000,
+};
+
+const withdrawFromAccount = function(amount) {
+  return account1.deductAmount.bind(account2, amount);
+};
+
+console.log(withdrawFromAccount(500)()); // 7500
+console.log(withdrawFromAccount(200)()); // 7300
