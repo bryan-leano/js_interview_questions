@@ -638,6 +638,7 @@ console.log(data2);
 ////////////////////////////////////
 // Objects Properties Question
 
+/*
 const a = {};
 const b = { name: 'b' };
 const c = { name: 'c' };
@@ -650,3 +651,21 @@ a[c] = 400;
  
 console.log(a[b]);
 // console.log(a['[object Object]']);
+*/
+
+
+////////////////////////////////////
+// X and Y
+
+var x = 10;
+ 
+function y() {
+    function x() {}
+    x = 100;
+    return;
+    // function x() {}
+}
+ 
+y();
+ 
+console.log(x);
