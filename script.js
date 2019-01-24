@@ -676,6 +676,7 @@ console.log(x);
 ////////////////////////////////////
 // Withdraw from Account
 
+/*
 const account1 = {
   name: 'Jen',
   totalAmount: 5000,
@@ -696,3 +697,23 @@ const withdrawFromAccount = function(amount) {
 
 console.log(withdrawFromAccount(500)()); // 7500
 console.log(withdrawFromAccount(200)()); // 7300
+*/
+
+
+////////////////////////////////////
+// MJI: Mixing a thread to the extreme
+
+function mixing_a_thread() {
+  console.log('1');
+  console.log('2');
+  setTimeout(function() {
+    console.log('3');
+  }, 1);
+  console.log('4');
+};
+
+mixing_a_thread();
+// 1
+// 2
+// 4
+// 3
