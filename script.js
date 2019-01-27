@@ -703,6 +703,7 @@ console.log(withdrawFromAccount(200)()); // 7300
 ////////////////////////////////////
 // MJI: Mixing a thread to the extreme
 
+/*
 function mixing_a_thread() {
   console.log('1');
   console.log('2');
@@ -713,7 +714,32 @@ function mixing_a_thread() {
 };
 
 mixing_a_thread();
+*/
 // 1
 // 2
 // 4
 // 3
+
+
+////////////////////////////////////
+// MJI: Closures revisited
+
+// inner functions contain the scope of parent functions even if the parent function has returned.
+
+// Example 1
+
+function foo(n1) {
+
+  var n2 = n1 + 1;
+  
+  function bar(n3) {
+  
+  console.log(n1, n2, n3);
+  
+  }
+  
+  bar (n2 + 6);
+  
+  }
+  
+  foo(5);
