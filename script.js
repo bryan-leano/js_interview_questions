@@ -728,6 +728,7 @@ mixing_a_thread();
 
 // Example 1
 
+/*
 function foo(n1) {
 
   var n2 = n1 + 1;
@@ -743,3 +744,30 @@ function foo(n1) {
   }
   
   foo(5);
+*/
+
+
+////////////////////////////////////
+// MJI: Hoisting
+
+showMovie();
+
+function showMovie() {
+console.log("Going to show the movie");
+};
+
+/*
+var showMovie = function() {
+console.log("Going to show the movie");
+};
+
+showMovie();
+*/
+
+var myVar = 'foo';
+
+(function() {
+console.log('myVar value: ' + myVar);
+var myVar = 'bar';
+console.log('myVar value: ' + myVar);
+})();
