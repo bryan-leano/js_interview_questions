@@ -750,19 +750,20 @@ function foo(n1) {
 ////////////////////////////////////
 // MJI: Hoisting
 
+/*
 showMovie();
 
 function showMovie() {
 console.log("Going to show the movie");
 };
 
-/*
+
 var showMovie = function() {
 console.log("Going to show the movie");
 };
 
 showMovie();
-*/
+
 
 var myVar = 'foo';
 
@@ -771,3 +772,26 @@ console.log('myVar value: ' + myVar);
 var myVar = 'bar';
 console.log('myVar value: ' + myVar);
 })();
+*/
+
+
+////////////////////////////////////
+// MJI: Out of Context
+
+// Four rules
+
+var bar = {
+
+  foo: function() {
+  
+  return this;
+  
+  }
+  
+  }
+  
+  var p = bar.foo();
+  
+  console.log(p === bar);
+
+// true
