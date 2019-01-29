@@ -824,4 +824,15 @@ var bar = {
 
 
 ////////////////////////////////////
-// 
+// Add some curry
+
+function add(num1){
+  return function(num2){
+    return function(num3) {
+      return num1 + num2 + num3;
+    };
+  };
+};
+
+console.log(add(3)(4)(5));
+console.log(add(1)(1)(2));
