@@ -780,6 +780,7 @@ console.log('myVar value: ' + myVar);
 
 // Four rules
 
+/*
 var bar = {
 
   foo: function() {
@@ -795,3 +796,32 @@ var bar = {
   console.log(p === bar);
 
 // true
+*/
+
+
+////////////////////////////////////
+// MJI: Yanney vs Laurel
+
+// Variation for IIFE
+
+// Variation 1
+
+/*
+(function() {
+
+  console.log("Variation 1");
+  
+  }());
+  
+  // Variation 2
+  
+  (function() {
+  
+  console.log("Variation 2");
+  
+  })();
+  */
+
+
+////////////////////////////////////
+// 
